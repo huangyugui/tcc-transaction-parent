@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/application-account/application-account.iml" filepath="$PROJECT_DIR$/application-account/application-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-account-api/application-account-api.iml" filepath="$PROJECT_DIR$/application-account-api/application-account-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-order/application-order.iml" filepath="$PROJECT_DIR$/application-order/application-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-redpacket/application-redpacket.iml" filepath="$PROJECT_DIR$/application-redpacket/application-redpacket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-redpacket-api/application-redpacket-api.iml" filepath="$PROJECT_DIR$/application-redpacket-api/application-redpacket-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tcc-transaction-parent.iml" filepath="$PROJECT_DIR$/tcc-transaction-parent.iml" />
+    </modules>
+  </component>
+</project>

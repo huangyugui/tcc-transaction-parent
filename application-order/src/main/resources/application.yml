@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+server.context-path: /tcc
+
+# Dubbo 服务消费者配置
+spring:
+  dubbo:
+    application:
+      name: web-api
+    registry:
+      address: zookeeper://localhost:2291
+    scan: com.huang
+
+spring.dubbo.application.owner: meijie-thirdparty-consumer
+spring.dubbo.application.name: meijie-thirdparty-consumer
+spring.dubbo.application.organization: gomefinance-meijie
+spring.dubbo.registries[0].id: myfRegistry
+spring.dubbo.registries[0].address: zookeeper://localhost:2291

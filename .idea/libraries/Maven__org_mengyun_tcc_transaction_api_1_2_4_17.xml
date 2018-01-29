@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mengyun:tcc-transaction-api:1.2.4.17">
+    <CLASSES>
+      <root url="jar://D:/tools/Maven/maven_repo/org/mengyun/tcc-transaction-api/1.2.4.17/tcc-transaction-api-1.2.4.17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/tools/Maven/maven_repo/org/mengyun/tcc-transaction-api/1.2.4.17/tcc-transaction-api-1.2.4.17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/tools/Maven/maven_repo/org/mengyun/tcc-transaction-api/1.2.4.17/tcc-transaction-api-1.2.4.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

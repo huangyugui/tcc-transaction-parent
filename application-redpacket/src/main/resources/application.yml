@@ -1,0 +1,10 @@
+spring:
+  dubbo:
+    application:
+      name: application-redpacket
+    protocol:
+      name: dubbo
+      port: 20882
+    registry:
+      address: zookeeper://localhost:2291
+    scan: com.huang

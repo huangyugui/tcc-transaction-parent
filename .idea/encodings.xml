@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application-account" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application-account-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application-redpacket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application-redpacket-api" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="application-account" />
+        <module name="application-account-api" />
+        <module name="application-order" />
+        <module name="application-redpacket" />
+        <module name="application-redpacket-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="application-account" target="1.8" />
+      <module name="application-account-api" target="1.8" />
+      <module name="application-order" target="1.8" />
+      <module name="application-redpacket" target="1.8" />
+      <module name="application-redpacket-api" target="1.8" />
+      <module name="tcc-transaction-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
