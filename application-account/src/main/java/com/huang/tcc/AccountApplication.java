@@ -2,8 +2,11 @@ package com.huang.tcc;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * Description:
@@ -13,7 +16,11 @@ import org.springframework.context.annotation.ImportResource;
  * @version 1.0
  */
 @SpringBootApplication
-@ImportResource("classpath:tcc-transaction.xml")
+@EnableTransactionManagement
+@ComponentScan("com.huang.tcc")
+@EnableAspectJAutoProxy
+@ImportResource({"classpath:tcc-transaction.xml","classpath:tcc-transaction-dubbo.xml"})
+//@ImportResource("classpath:tcc-transaction-dubbo.xml")
 public class AccountApplication {
 
     public static void main(String[] args){

@@ -25,7 +25,5 @@ spring:
       name: dubbo
       port: 20881
     registry:
-      address: zookeeper://localhost:2291
-    scan: com.huang
-jdbc:
-  url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8
+      address: zookeeper://127.0.0.1:2291
+    scan: com.huang.tcc

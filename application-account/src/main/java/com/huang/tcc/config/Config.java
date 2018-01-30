@@ -1,13 +1,17 @@
 package com.huang.tcc.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import org.mengyun.tcctransaction.recover.TransactionRecovery;
+import org.mengyun.tcctransaction.spring.ConfigurableCoordinatorAspect;
+import org.mengyun.tcctransaction.spring.ConfigurableTransactionAspect;
+import org.mengyun.tcctransaction.spring.recover.RecoverScheduledJob;
 import org.mengyun.tcctransaction.spring.repository.SpringJdbcTransactionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.mengyun.tcctransaction.spring.support.SpringBeanFactory;
+import org.mengyun.tcctransaction.spring.support.SpringTransactionConfigurator;
+import org.quartz.Scheduler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.sql.SQLException;
+import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
 /**
  * Description:
@@ -38,4 +42,49 @@ public class Config {
         return st;
     }
 
+//    @Bean
+//    public SpringBeanFactory getSpringBeanFactory(){
+//        return new SpringBeanFactory();
+//    }
+//
+//    @Bean
+//    public SpringTransactionConfigurator getSpringTransactionConfigurator(){
+//        return new SpringTransactionConfigurator();
+//    }
+//
+//    @Bean
+//    public ConfigurableTransactionAspect getConfigurableTransactionAspect(SpringTransactionConfigurator springTransactionConfigurator){
+//        ConfigurableTransactionAspect cta = new ConfigurableTransactionAspect();
+//        cta.setTransactionConfigurator(springTransactionConfigurator);
+//        return cta;
+//    }
+//
+//    @Bean
+//    public ConfigurableCoordinatorAspect getConfigurableCoordinatorAspect(SpringTransactionConfigurator springTransactionConfigurator){
+//        ConfigurableCoordinatorAspect cca = new ConfigurableCoordinatorAspect();
+//        cca.setTransactionConfigurator(springTransactionConfigurator);
+//        return cca;
+//    }
+//
+//    @Bean
+//    public TransactionRecovery getTransactionRecovery(SpringTransactionConfigurator springTransactionConfigurator){
+//        TransactionRecovery tr = new TransactionRecovery();
+//        tr.setTransactionConfigurator(springTransactionConfigurator);
+//        return tr;
+//    }
+//
+//    @Bean
+//    public SchedulerFactoryBean getSchedulerFactoryBean(){
+//        return new SchedulerFactoryBean();
+//    }
+//
+//    @Bean
+//    public RecoverScheduledJob getRecoverScheduledJob(SpringTransactionConfigurator springTransactionConfigurator,
+//            TransactionRecovery transactionRecovery, Scheduler schedulerFactoryBean){
+//        RecoverScheduledJob rsj = new RecoverScheduledJob();
+//        rsj.setTransactionConfigurator(springTransactionConfigurator);
+//        rsj.setTransactionRecovery(transactionRecovery);
+//        rsj.setScheduler(schedulerFactoryBean);
+//        return rsj;
+//    }
 }

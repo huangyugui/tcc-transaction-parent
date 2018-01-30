@@ -9,7 +9,7 @@ spring:
     application:
       name: web-api
     registry:
-      address: zookeeper://localhost:2291
+      address: zookeeper://127.0.0.1:2291
     scan: com.huang
 
 spring.dubbo.application.owner: meijie-thirdparty-consumer
